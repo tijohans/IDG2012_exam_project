@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sites for viewing and reading recipes">
+    <link rel="stylesheet" href="../scss/style.css">
+    <script src="../script.js" defer></script>
+    <script src="../form.js" defer></script>
+    <title>Mealideas | Contact</title>
+</head>
+
+<body>
+    <header class="mobile__header">
+        <a href="#main" class="skip-to-content">Skip to main content</a>
+        <h2 class="header__title">Mealideas</h2>
+
+        <button 
+            class="mobile__header__menu--button" 
+            aria-controls="mobile__overlay" 
+            aria-label="menu"
+            aria-expanded="false">
+
+            <span class="srOnly">Menu</span>
+            <img src="../assets/hamburger-menu.svg" class="mobile__overlay--open"
+                alt="hamburger menu icon for opening primary-navigation">
+        </button>
+
+        <nav class="mobile__overlay" data-state="closed">
+            <ul class="mobile__overlay--list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./recipes.html">Recipes</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="desktop__navigation">
+            <ul class="desktop__navigation__list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./recipes.html">Recipes</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main" class="contact">
+        <h1>Contact Us!</h1>
+        <form action="#" class="contact__form">
+            <label for="nameInput">Name</label>
+            <span class="contact__form__error-message"></span>
+            <input type="text" name="name" id="nameInput">
+
+            <label for="emailInput">Email <span class="info">(required)</span></label>
+            <span   class="contact__form__error-message"
+                    role="alert"></span>
+            <input 
+                type="email" 
+                name="email" 
+                required 
+                aria-required="true" 
+                id="emailInput">
+
+            <label for="contact__form__textarea">Message <span§ class="info">(required)</span></label>
+            <span   class="contact__form__error-message"
+                    role="alert"></span>
+            <textarea 
+                name="message" 
+                cols="20" 
+                rows="10" 
+                id="contact__form__textarea" 
+                required 
+                aria-required="true" 
+                ></textarea>
+
+            <button 
+                type="submit" 
+                class="button"
+                aria-haspopup="dialog">Send Message</button>
+        </form>
+
+        
+        <dialog class="contact__form__dialog">
+            <!-- Needed a second div, because the dialog element does not support grid directly -->
+            <div class="contact__form__dialog__content">
+                <h2>Message successfully sent!</h2>
+                <button class="button contact__form__dialog__close-button">close window</button>
+            </div>
+        </dialog>
+    </main>
+</body>

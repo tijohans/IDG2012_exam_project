@@ -1,0 +1,17 @@
+// Base styles
+@use './base/reset.scss';
+@use './base/typography.scss';
+
+//Global Styles
+@use './base/base';
+
+// Component styles
+@use './components/recipecard';
+@use './components/button';
+
+// Layout styles
+@use './layout/header.scss';
+@use './layout/homepage';
+@use './layout/recipes';
+@use './layout/contact';
+@use './layout/about';

@@ -1,0 +1,12 @@
+// Global styles
+
+@use './colors';
+
+body {
+    background-color: colors.$bg-color-1;
+}
+
+// Making the focus style easier to read
+*:focus {
+    outline: 3px rgb(57, 119, 226) dashed;
+}

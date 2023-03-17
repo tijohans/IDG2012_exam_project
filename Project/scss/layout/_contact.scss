@@ -1,0 +1,52 @@
+.contact {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: min(350px, 80vw);
+
+    input,
+    textarea {
+        margin-bottom: 2vh;
+    }
+}
+
+#contact__form__textarea {
+    resize: vertical;
+}
+
+.contact__form__dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-height: 15vh;
+    min-width: 35vw;
+    padding: 2vh;
+
+    &::backdrop {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    &__content {
+        display: grid;
+        place-items: center;
+        min-height: 15vh;
+    }
+}
+
+
+.contact__form__error-message {
+    display: hidden;
+}
+
+.contact__form__error-message, 
+.info {
+    color: #AD0000;
+}

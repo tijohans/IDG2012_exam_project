@@ -1,0 +1,17 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    margin-bottom: 10vh;
+    margin-inline: 10vw;
+}
+
+.about__about,
+.about__whatwedo {
+    margin-top: 5vh;
+    
+    * {
+        max-width: 45ch;
+    }
+}

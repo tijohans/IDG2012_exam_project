@@ -1,0 +1,45 @@
+@use './colors';
+
+@font-face {
+    font-family: 'Atkinsons Hyperlegible';
+    src: url(../../assets/fonts/AtkinsonHyperlegible-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Righteous';
+    src: url(../../assets/fonts/Righteous-Regular.ttf);
+}
+
+* {
+    font-family: 'Atkinsons Hyperlegible', sans-serif;
+}
+
+h1, h2, h3,
+.recipe__card__button{
+    font-family: 'Righteous', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    max-width: 50ch;
+}
+
+// Font styling for list items in mobile overlay
+.mobile__overlay--list a{
+    font-family: 'Righteous', sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    color: colors.$bg-color-1;
+}
+

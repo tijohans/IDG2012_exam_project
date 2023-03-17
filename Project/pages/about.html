@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sites for viewing and reading recipes">
+    <link rel="stylesheet" href="../scss/style.css">
+    <script src="../script.js" defer></script>
+    <title>Mealideas | About Us</title>
+</head>
+
+<body>
+    <header class="mobile__header">
+        <a href="#main" class="skip-to-content">Skip to main content</a>
+        <h2 class="header__title">Mealideas</h2>
+
+        <button class="mobile__header__menu--button" aria-controls="mobile__overlay" aria-label="menu"
+            aria-expanded="false">
+
+            <span class="srOnly">Menu</span>
+            <img src="../assets/hamburger-menu.svg" class="mobile__overlay--open"
+                alt="hamburger menu icon for opening primary-navigation">
+        </button>
+
+        <nav class="mobile__overlay" data-state="closed">
+            <ul class="mobile__overlay--list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./recipes.html">Recipes</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="desktop__navigation">
+            <ul class="desktop__navigation__list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./recipes.html">Recipes</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main" class="about">
+        <!-- Placeholder text copied from: https://www.tasteofhome.com/about-taste-of-home/ -->
+        <article class="about__about">
+            <img src="../assets/images/about1.jpg" alt="Person eating a salad at home with cutlery" class="recipe__image">
+            <h1>About Us</h1>
+            <p>Taste of Home was founded in 1993 on a simple premise: home cooks are the best cooks. Special recipes are at
+                the heart of so many of our warmest memories—families gathered around holiday tables or celebrating special
+                occasions with friends. Even neighborhood potlucks, impromptu cookouts and simple weeknight dinners are made
+                better by sharing from-scratch dishes made with love. It has been our privilege to share recipes and cooking
+                inspiration with millions of people for almost three decades through our magazines, books, videos and
+                website.
+            </p>
+        </article>
+
+        <article class="about__whatwedo">
+            <img src="../assets/images/about2.jpg" alt="Lots of different dishes on a table with peopple sitting around the table enjoying" class="recipe__image">
+            <h2>What we do</h2>
+            <p>Home cooks send us about 10,000 recipes every year. But before a recipe is published, it must be Test
+                Kitchen-approved. Here’s how it works:
+                
+                Our knowledgeable food editors review each recipe we receive and send the best candidates to the Test
+                Kitchen. Testing every step, our Test Kitchen cooks ensure the amounts, equipment, temperature and method
+                are accurate. If something doesn’t turn out as expected, they make adjustments until the recipe is right.
+                
+                The Test Kitchen hosts tasting panels, where a group of expert editors and culinary staff evaluates them on
+                flavor, texture, appearance and ease of preparation. When we’re satisfied, we send the recipe back to the
+                Test Kitchen for final preparation, then to the photo studio to be styled and shot. At that point, the
+                recipe is ready to be published so you can make it in your own kitchen.
+                
+                We don’t stop with recipes: our team tests packaged foods, kitchen gadgets and cleaning supplies, too. We’ve
+                spent countless hours vetting products in our thorough testing process to determine the best. Winners earn
+                our Test Kitchen-Preferred seal of approval.</p>
+            </article>
+
+            <a href="./contact.html" class="button">Contact Us</a>
+    </main>
+</body>

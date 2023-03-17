@@ -1,0 +1,41 @@
+@use '../base/colors';
+
+.recipe__card {
+
+    // Setting the size of the card
+    aspect-ratio: 3.5 / 2;
+    height: min(200px, 50vw);
+
+    background-color: colors.$bg-color-1;
+    border: 5px solid colors.$bg-color-3;
+    box-shadow: 5px 5px 0px 0px colors.$bg-color-3;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__image {
+        aspect-ratio: 2 / 2.6;
+        object-fit: cover;
+    }
+    
+    &__image,
+    &__button {
+        border: 3px solid colors.$bg-color-3;
+        box-shadow: 3px 3px 0 0 colors.$bg-color-3;
+    }
+    
+    &__image {
+        height: 80%;
+    }
+}
+
+.recipe__card__info__container {
+    max-width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+    

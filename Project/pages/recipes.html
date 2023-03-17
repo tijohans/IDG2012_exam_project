@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sites for viewing and reading recipes">
+    <link rel="stylesheet" href="../scss/style.css">
+    <script src="../script.js" defer></script>
+    <title>Mealideas | Recipes</title>
+</head>
+
+<body>
+    <header class="mobile__header">
+        <a href="#main" class="skip-to-content">Skip to main content</a>
+        <h2 class="header__title">Mealideas</h2>
+
+        <button class="mobile__header__menu--button" aria-controls="mobile__overlay" aria-label="menu"
+            aria-expanded="false">
+
+            <span class="srOnly">Menu</span>
+            <img src="../assets/hamburger-menu.svg" class="mobile__overlay--open"
+                alt="hamburger menu icon for opening primary-navigation">
+        </button>
+
+        <nav class="mobile__overlay" data-state="closed">
+            <ul class="mobile__overlay--list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./recipes.html">Recipes</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="desktop__navigation">
+            <ul class="desktop__navigation__list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./recipes.html">Recipes</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main" class="recipes">
+        <h2 class=recipes__header>Lunch Recipes</h2>
+        <section class="recipes__lunch">
+            <article class="recipe__card">
+                <img    class="recipe__card__image"
+                        src="../assets/images/lunch_recipe1.jpg" 
+                        alt="shows sliced bread with butter on, bread is from the recipe">
+
+                <div class="recipe__card__info__container">
+                    <h2 id="lunch-bread" class="recipe__card__title">Lunch Bread</h2>
+                    <p class="recipe__card__time">Cook time: 60 min</p>
+                    <a 
+                        href="./recipe_pages/lunch_recipe1.html" 
+                        class="recipe__card__button button"
+                        aria-labelledby="lunch-bread">View Recipe</a>
+                </div>
+            </article>
+            <article class="recipe__card">
+                <img    class="recipe__card__image"
+                        src="../assets/images/cookie.png" 
+                        alt="Shows the completed cookie from the recipe on a plate">
+
+                <div class="recipe__card__info__container">
+                    <h2 id="2min-cookie" class="recipe__card__title">2min Cookie</h2>
+                    <p class="recipe__card__time">Cook time: 2 min</p>
+                    <a 
+                        class="recipe__card__button button" 
+                        href="../pages/recipe_pages/lunch_recipe2.html"
+                        aria-labelledby="2min-cookie">View Recipe</a>
+                </div>
+            </article>
+        </section>
+
+        <h2 class="recipes__header">Dinner Recipes</h2>
+        <section class="recipes__dinner">
+            <article class="recipe__card">
+                <img    class="recipe__card__image"
+                        src="../assets/images/dinner__recipe1.jpg" 
+                        alt="shows a pan with pasta, with srhip, tomatoes, and basil. Dish is from the recipe">
+
+                <div class="recipe__card__info__container">
+                    <h2 id="15min-pasta" class="recipe__card__title">15min Pasta</h2>
+                    <p class="recipe__card__time">Cook time: 15 min</p>
+                    <a 
+                        class="recipe__card__button button" 
+                        href="./recipe_pages/dinner__recipe1.html"
+                        aria-labelledby="15min-pasta">View Recipe</a>
+                </div>
+            </article>
+            <article class="recipe__card">
+                <img    class="recipe__card__image"
+                        src="../assets/images/dinner__recipe2.jpg" 
+                        alt="Shows italian style pizza with tomato sauce, cheese and basil. ">
+
+                <div class="recipe__card__info__container">
+                    <h2 id="weeknight-pizza" class="recipe__card__title">Weeknight Pizza</h2>
+                    <p class="recipe__card__time">Cook time: 45 min</p>
+                    <a 
+                        class="recipe__card__button button" 
+                        href="../pages/recipe_pages/dinner_recipe2.html"
+                        aria-labelledby="weeknight-pizza">View Recipe</a>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>

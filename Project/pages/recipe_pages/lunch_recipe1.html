@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sites for viewing and reading recipes">
+    <link rel="stylesheet" href="../../scss/style.css">
+    <script src="../../script.js" defer></script>
+    <title>Mealideas | Recipes | Lunch Bread</title>
+</head>
+
+<body>
+    <header class="mobile__header">
+        <a href="#main" class="skip-to-content">Skip to main content</a>
+        <h2 class="header__title">Mealideas</h2>
+
+        <button class="mobile__header__menu--button" 
+                aria-controls="mobile__overlay" 
+                aria-label="menu"
+                aria-expanded="false">
+
+            <span class="srOnly">Menu</span>
+            <img src="../../assets/hamburger-menu.svg" class="mobile__overlay--open"
+                alt="hamburger menu icon for opening primary-navigation">
+        </button>
+
+        <nav class="mobile__overlay" data-state="closed">
+            <ul class="mobile__overlay--list">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../recipes.html">Recipes</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+
+        <nav class="desktop__navigation">
+            <ul class="desktop__navigation__list">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../recipes.html">Recipes</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id="main" class="recipe">
+        <section class="lunch__recipe1">
+            <img src="../../assets/images/lunch_recipe1.jpg" alt="Lunch Bread from recipe" class="recipe__image">
+            <h1 class="recipe__title">Lunch Bread</h1>
+            <p class="recipe__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi
+                dolorem ducimus iusto repudiandae, ex nemo similique quia? Repellat, sequi.</p>
+
+            <table>
+                <caption>Ingredients for Lunch Bread Recipe</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Ingredient</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>water</td>
+                        <td>3dl</td>
+                    </tr>
+                    <tr>
+                        <td>softened butter</td>
+                        <td>2 tbsp</td>
+                    </tr>
+                    <tr>
+                        <td>honey</td>
+                        <td>3 tbsp</td>
+                    </tr>
+                    <tr>
+                        <td>bread flour</td>
+                        <td>600 g</td>
+                    </tr>
+                    <tr>
+                        <td>salt</td>
+                        <td>1 tbps</td>
+                    </tr>
+                    <tr>
+                        <td>active dry yeast</td>
+                        <td>1 tsp</td>
+                    </tr>
+                    <tr>
+                        <td>flax seeds</td>
+                        <td>60 g</td>
+                    </tr>
+                    <tr>
+                        <td>sunflower seeds</td>
+                        <td>60 g</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
