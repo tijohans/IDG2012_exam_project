@@ -1,3 +1,5 @@
+# NB: Proper readme is the readme.pdf file 
+
 ## Sources
 [Button sizes](https://www.kalamuna.com/blog/3-simple-tips-ux-button-design)
 [Form accessibility](https://uxdesign.cc/5-ways-to-make-web-forms-accessible-fb3ccb9f1752)
@@ -10,30 +12,6 @@
 [Placeholder text](https://www.tasteofhome.com/about-taste-of-home/)
 [Cookie video](https://www.youtube.com/watch?v=h4CyhQqAPpk&ab_channel=Tasty)
 
-
-
-
-
-## TODO: 
-
-## Done: 
-- [x] Meta description for all pages
-- [x] Form validation
-- [x] Pop Ups
-- [x] Style the time for the video and the audio
-- [x] Make all links accesible with `aria-describedby` attribute — [accessible links](https://usability.yale.edu/web-accessibility/articles/links)
-- [x] Audio controls for the audio file
-    - [x] Shared media controls(?)
-
-
-## Notes for report
-- The mobile navigation
-    - how to animation was handled using aria labels and data-state
-- That the captions on the video are not matching
-
-
-## Misc
-tree --dirfirst
 
 ## Notes: 
 
